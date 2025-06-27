@@ -24,3 +24,68 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@layer components {
+  .link-button {
+    @apply flex items-center gap-2 text-sm text-gray-300 border border-white/20 px-3 py-1.5 rounded-md hover:text-white hover:border-blue-500 hover:bg-blue-500/10 transition-all duration-200;
+  }
+}
+
+/* src/app/globals.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  This file defines the global styles and custom utility classes for the portfolio.
+*/
+
+/* 1. Base Styles, Theming, and Smooth Scrolling */
+@layer base {
+  html {
+    /* Enables smooth scrolling for hash links like #projects */
+    @apply scroll-smooth;
+  }
+
+  body {
+    /* Default (Light Mode) Styles */
+    @apply bg-gray-50 text-gray-900;
+
+    /* Dark Mode Styles - applied when the <html> tag has class="dark" */
+    @apply dark:bg-[#0a0a0c] dark:text-[#ebebeb];
+
+    /* Smooth transition for theme switching */
+    @apply transition-colors duration-300;
+  }
+}
+
+/* 2. Custom Reusable Component Styles */
+@layer components {
+
+  /*
+    Custom class for the project card links (Live, Github, Figma).
+    This keeps the component markup clean and styles consistent.
+  */
+  .link-button {
+    @apply flex items-center gap-2 text-sm text-gray-300 border border-white/20 px-3 py-1.5 rounded-md hover:text-white hover:border-blue-500 hover:bg-blue-500/10 transition-all duration-200;
+  }
+
+  /*
+    Custom class for the contact form inputs and textarea.
+    Ensures a consistent look and feel for all form fields.
+  */
+  .form-input {
+    @apply w-full p-3 rounded-md outline-none bg-white/50 dark:bg-[#171719] border border-black/10 dark:border-white/10 focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-500 transition-all duration-200;
+  }
+}
+
+@layer components {
+  /* ... (.link-button, .form-input) ... */
+
+  /* New utility for the hero image fade effect */
+  .mask-fade-to-left {
+    -webkit-mask-image: linear-gradient(to left, transparent 20%, black 80%);
+    mask-image: linear-gradient(to left, transparent 20%, black 80%);
+  }
+}
