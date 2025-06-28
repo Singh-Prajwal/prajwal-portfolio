@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion'
-import { ThemeToggle } from "./ThemeToggle"
+// import { ThemeToggle } from "./ThemeToggle"
 import Link from 'next/link'
 
 const navLinks = [
