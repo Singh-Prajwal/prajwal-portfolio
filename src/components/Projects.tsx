@@ -31,6 +31,14 @@ const projectData: Project[] = [
         image: "/rental.png",
         liveUrl:"https://rental-frontend-3irp.vercel.app/",
         githubUrl: "https://github.com/Singh-Prajwal/rental-frontend",
+      },
+      { 
+          title: "AI Powered Interview App", 
+          description: "An Interactive platform for testing yourself on various topic with specific desiged according to your skills.",
+          tech: ["Next", "Node.js", "PostgreSQL","Tailwind CSS", "Flask","Graphql","Vercel","Python"],
+          image: "/AI-interview.png", 
+          liveUrl: "https://ai-ui-app.vercel.app//",
+          githubUrl: "https://github.com/Singh-Prajwal/ai-ui-app"
         },
         { 
             title: "Resolved Risk", 
@@ -48,7 +56,7 @@ const projectData: Project[] = [
             liveUrl: "https://app.feeschedulepro.com/",
             githubUrl: "https://github.com/Singh-Prajwal"
           },
-];
+        ];
 
 const containerVariants = {
   hidden: { opacity: 0 },

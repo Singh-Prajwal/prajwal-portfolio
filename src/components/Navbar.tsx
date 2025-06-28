@@ -41,7 +41,7 @@ export default function Navbar() {
         <Link href="/#" className="font-bold text-xl">
           Prajwal Singh
         </Link>
-        <ul className="hidden md:flex items-center gap-6">
+        <ul className="hidden md:flex items-center gap-6 mr-10 ">
           {navLinks.map((link) => (
             <li key={link.hash}>
               <a href={link.hash} className="hover:text-blue-500 dark:hover:text-blue-400 transition-colors">
@@ -50,7 +50,7 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
-        <ThemeToggle />
+        {/* <ThemeToggle /> */}
       </nav>
     </motion.header>
   )
