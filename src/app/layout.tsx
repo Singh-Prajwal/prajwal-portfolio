@@ -20,6 +20,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
+<head>
+<script src="https://assets.adobedtm.com/e9875dd51dbe/43c0a64a4404/launch-132ceb6bedef.min.js" async></script>
+</head>
+      
+      
       <body className={`${openSans.className} bg-gray-50 text-gray-900 dark:bg-[#0a0a0c] dark:text-[#ebebeb] transition-colors duration-300`}>
         <Providers>
         <ActiveSectionContextProvider>
