@@ -21,7 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" suppressHydrationWarning>
 <head>
-<script src="https://assets.adobedtm.com/e9875dd51dbe/43c0a64a4404/launch-132ceb6bedef.min.js" async></script>
+  <script src="https://assets.adobedtm.com/e9875dd51dbe/b34535a2b86e/launch-d21e4a676ab0.min.js" async></script>
 </head>
       
       
