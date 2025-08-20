@@ -21,15 +21,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" suppressHydrationWarning>
 <head>
-  <script src="https://assets.adobedtm.com/e9875dd51dbe/b34535a2b86e/launch-4f9fc8da7ceb-development.min.js" async></script>
-<script>
-    window.targetPageParams = function() {
+  <script src="https://assets.adobedtm.com/e9875dd51dbe/b34535a2b86e/launch-4f9fc8da7ceb-development.min.js" async>
+  window.targetPageParams = function() {
       return {
         pageCategory: 'homepage',
         userType: 'guest'
       };
-    };
-  </script> 
+    };</script>
+
 </head>
       
       
