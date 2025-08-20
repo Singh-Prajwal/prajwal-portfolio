@@ -22,7 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" suppressHydrationWarning>
 <head>
   <script src="https://assets.adobedtm.com/e9875dd51dbe/b34535a2b86e/launch-4f9fc8da7ceb-development.min.js" async></script>
-</head>
+  </head>
       
       
       <body className={`${openSans.className} bg-gray-50 text-gray-900 dark:bg-[#0a0a0c] dark:text-[#ebebeb] transition-colors duration-300`}>
