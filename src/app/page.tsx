@@ -22,10 +22,9 @@ export default function Home() {
     const el = mboxRef.current;
 
     window.adobe.target.getOffer({
-      mbox: "mboxName",
+      mbox: "container-1",
       params: {
         param1: "value1",
-        param2: "value2"
       },
       success: function(offer: any) {
         window.adobe.target.applyOffer({
