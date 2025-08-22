@@ -26,6 +26,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       
       
       <body className={`${openSans.className} bg-gray-50 text-gray-900 dark:bg-[#0a0a0c] dark:text-[#ebebeb] transition-colors duration-300`}>
+         <div id="container-1">Container-1
+         </div>
+        <div id="target-box-1">target-1</div>
         <Providers>
         <ActiveSectionContextProvider>
         <LeftSidebar />
