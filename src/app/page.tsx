@@ -11,34 +11,34 @@ import Footer from '@/components/Footer'
 
 export default function Home() {
   const { x, y } = useMousePosition();
-  const mboxRef = useRef<HTMLDivElement>(null);
+  // const mboxRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    if (!window.adobe || !window.adobe.target || !mboxRef.current) {
-      // adobe.target might not be loaded yet or mboxRef not ready
-      return;
-    }
+  // useEffect(() => {
+  //   if (!window.adobe || !window.adobe.target || !mboxRef.current) {
+  //     // adobe.target might not be loaded yet or mboxRef not ready
+  //     return;
+  //   }
 
-    const el = mboxRef.current;
+  //   const el = mboxRef.current;
 
-    window.adobe.target.getOffer({
-      mbox: "container-1",
-      params: {
-        param1: "value1",
-      },
-      success: function(offer: any) {
-        window.adobe.target.applyOffer({
-          mbox: "mboxName",
-          selector: el,
-          offer: offer
-        });
-      },
-      error: function(error: any) {
-        console.error(error);
-        el.style.visibility = "visible"; // fallback: show default content
-      }
-    });
-  }, []);
+  //   window.adobe.target.getOffer({
+  //     mbox: "container-1",
+  //     params: {
+  //       param1: "value1",
+  //     },
+  //     success: function(offer: any) {
+  //       window.adobe.target.applyOffer({
+  //         mbox: "mboxName",
+  //         selector: el,
+  //         offer: offer
+  //       });
+  //     },
+  //     error: function(error: any) {
+  //       console.error(error);
+  //       el.style.visibility = "visible"; // fallback: show default content
+  //     }
+  //   });
+  // }, []);
   return (
     <main className="relative overflow-x-hidden">
       
