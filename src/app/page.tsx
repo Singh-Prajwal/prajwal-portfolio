@@ -1,7 +1,7 @@
 'use client' // This page must be a client component to use the hook
 
 import { motion } from 'framer-motion'
-import { useMousePosition } from '@/hooks/useMousePosition'
+// import { useMousePosition } from '@/hooks/useMousePosition'
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import Skills from '@/components/Skills'
