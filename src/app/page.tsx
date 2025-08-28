@@ -10,8 +10,8 @@ import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 
 export default function Home() {
-  const { x, y } = useMousePosition();
-  const mboxRef = useRef<HTMLDivElement>(null);
+  // const { x, y } = useMousePosition();
+  // const mboxRef = useRef<HTMLDivElement>(null);
 
   // useEffect(() => {
   //   if (!window.adobe || !window.adobe.target || !mboxRef.current) {
