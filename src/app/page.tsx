@@ -11,18 +11,7 @@ import Footer from '@/components/Footer'
 
 export default function Home() {
   const { x, y } = useMousePosition();
-  document.getElementById('visitBtn').addEventListener('click', function() {
-  alloy('sendEvent', {
-    xdm: {
-      web: {
-        webPageDetails: { }
-      },
-      _mySignals: {
-        buttonClickId: 'visitBtn'
-      }
-    }
-  });
-});
+  
   // const mboxRef = useRef<HTMLDivElement>(null);
 
   // useEffect(() => {
